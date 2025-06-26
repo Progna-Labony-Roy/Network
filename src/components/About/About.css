@@ -1,0 +1,70 @@
+.about-container {
+    position: relative;
+    text-align: center; /* Center the text horizontally */
+    overflow: hidden; /* Prevent overflow from child elements */
+}
+
+.about-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-layer {
+    position: absolute; /* Position over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px); /* Frosted glass effect */
+    border-radius: 10px; /* Optional: add rounded corners */
+    z-index: 1; /* Ensure it's below the text */
+}
+
+.about-text {
+    position: absolute; /* Position it absolutely within the container */
+    top: 40%; /* Position it halfway down */
+    left: 50%; /* Position it halfway across */
+    transform: translate(-50%, -50%); /* Center the element */
+    z-index: 2; /* Ensure the text is above the layer */
+    color: white; /* Text color */
+    padding: 20px; /* Add padding around the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {.about-image {
+
+    height: 300px;
+    }}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {.about-image {
+
+    height: 300px;
+
+}}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {.about-image {
+
+    height: 360px;
+    width: 100%;
+
+}}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {.about-image {
+
+    height: 500px;
+    width: 100%;
+
+}}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {.about-image {
+
+    height: 500px;
+    width: 100%;
+
+}}
